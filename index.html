@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>GeoQuest-research user agent</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1f24; --muted:#57606a; --bg:#ffffff; --line:#d8dee4; --code:#f3f5f7; --link:#0b5cad; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9aa4ae; --bg:#0f1318; --line:#2b323a; --code:#1a2028; --link:#6cb3ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Bengali",sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 3rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .5rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  p, li { margin: .4rem 0; }
+  ul { padding-left: 1.2rem; }
+  .lead { color: var(--muted); margin-bottom: 1.5rem; }
+  code { display:block; background:var(--code); border:1px solid var(--line); border-radius:6px; padding:.6rem .75rem; font:0.9rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; }
+  a { color: var(--link); }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>GeoQuest-research user agent</h1>
+  <p class="lead">GeoQuest-research is the data-collection tool of Preli Quest, a Bengali exam-preparation app. It verifies facts for educational maps.</p>
+
+  <h2>User agent string</h2>
+  <code>GeoQuest-research/1.0 (https://conceptq2026-wq.github.io/geoquest-research/)</code>
+
+  <h2>What it fetches</h2>
+  <ul>
+    <li>Public pages and open-data APIs, for example official government websites, Wikipedia and Wikidata.</li>
+    <li>One source per fact. Every fact is cited.</li>
+  </ul>
+
+  <h2>How it behaves</h2>
+  <ul>
+    <li>Low request rate, one request at a time.</li>
+    <li>robots.txt is respected.</li>
+    <li>Any block, 403 or 429 response makes it stop.</li>
+  </ul>
+
+  <h2>Contact for site operators</h2>
+  <p>Please open an issue at <a href="https://github.com/conceptq2026-wq/geoquest-research/issues">github.com/conceptq2026-wq/geoquest-research/issues</a>. We respond there, and we will slow down or stop on request.</p>
+
+  <footer>Preli Quest · GeoQuest-research</footer>
+</main>
+</body>
+</html>
